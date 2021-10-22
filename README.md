@@ -30,21 +30,18 @@ Here is a heatmap representing the humidity level of every city within the datas
 
   ![heatmap](Images/heatmap.png)
 
-* Narrow down the DataFrame to find your ideal weather condition. For example:
+* I then wanted to narrow down my dataset by choosing conditions that met my ideal weather conditions for a vacations
 
-  * A max temperature lower than 80 degrees but higher than 70.
+  * A max temperature lower than 90 degrees but higher than 80.
 
-  * Wind speed less than 10 mph.
+  * Wind speed less than 15 mph.
 
-  * Zero cloudiness.
+  * I dropped any rows that didn't contain all conditions. I wanted to be sure the weather is ideal.
 
-  * Drop any rows that don't contain all three conditions. You want to be sure the weather is ideal.
+  
+* I then used Google Places API to find the first hotel for each city located within 5000 meters of my remaining candidate cities.
 
-  * **Note:** Feel free to adjust to your specifications but be sure to limit the number of rows returned by your API requests to a reasonable number.
-
-* Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
-
-* Plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
+* I plotted the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
 
   ![hotel map](Images/hotel_map.png)
 
